@@ -37,12 +37,12 @@
 * [Python](https://www.python.org/)
 * [Airflow](https://airflow.apache.org/)
 * [Spark](https://spark.apache.org/)
+* [Helm](https://helm.sh/docs/intro/install/)
 <br>
-<br>
+
 <h4>Criação do cluster pela CLI:</h4>
 
 ~~~
 eksctl create clurster --name=pre-aws-airflow --managed --instance-type=m5.xlarge 
---alb-ingress-access --node-private-networking --region=us-east-1 --nodes-min=w
-nodes-max=3 --full-ecr-access --asg-access --nodegroup-name=ng-kubpre
+--alb-ingress-access --node-private-networking --region=us-east-1 --nodes-min=1 nodes-max=3 --full-ecr-access --asg-access --nodegroup-name=ng-kubpre
 ~~~
